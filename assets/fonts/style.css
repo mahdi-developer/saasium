@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Value Sans Pro';
+    src: local('Value Sans Pro Regular'), local('Value-Sans-Pro-Regular'),
+        url('ValueSansPro-Regular.woff2') format('woff2'),
+        url('ValueSansPro-Regular.woff') format('woff'),
+        url('ValueSansPro-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
