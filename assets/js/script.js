@@ -31,6 +31,28 @@
     perMove: 1,
     gap   : '2rem',
     pagination: true,
+    breakpoints: {
+      1199: {
+        perPage: 4,
+        gap   : '1.5rem',
+      },
+      991: {
+        perPage: 3,
+        gap   : '1.5rem',
+      },
+      767: {
+        perPage: 2,
+        gap   : '2rem',
+      },
+      586: {
+        perPage: 2,
+        gap   : '2rem',
+      },
+      400: {
+        perPage: 2,
+        gap   : '1rem',
+      },
+    }
   });
 
   splide.mount();
@@ -40,8 +62,22 @@
     type: "loop",
     perPage: 3,
     perMove: 1,
-    gap   : '2rem',
+    gap   :  '40px',
     pagination: true,
+    breakpoints: {
+      1350: {
+        gap   :  '20px',
+  
+      },
+      776: {
+        perPage: 2,
+        gap   :  '15px',
+      },
+      586: {
+        perPage: 1,
+        gap   :  '10px',
+      }
+    },
   });
 
   splide1.mount();
