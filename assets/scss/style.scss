@@ -251,6 +251,10 @@ body {
 
 .fs-4 {
     line-height: 34px;
+    @media (max-width:575px) {
+        font-size: 20px !important;
+        line-height: 28px;
+    }
 }
 
 .fs-36 {
@@ -365,6 +369,9 @@ body {
 
 .py-110 {
     padding: 110px 0;
+    @media (max-width:575px) {
+        padding: 60px 0;
+    }
 }
 
 .footer-border {

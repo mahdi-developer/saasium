@@ -38,7 +38,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
-  font-family: "Value Sans Pro"!important;
+  font-family: "Value Sans Pro" !important;
 }
 
 /*font */
@@ -238,6 +238,12 @@ body {
 .fs-4 {
   line-height: 34px;
 }
+@media (max-width: 575px) {
+  .fs-4 {
+    font-size: 20px !important;
+    line-height: 28px;
+  }
+}
 
 .fs-36 {
   font-size: 36px;
@@ -357,6 +363,11 @@ body {
 
 .py-110 {
   padding: 110px 0;
+}
+@media (max-width: 575px) {
+  .py-110 {
+    padding: 60px 0;
+  }
 }
 
 .footer-border {

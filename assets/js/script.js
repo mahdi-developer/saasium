@@ -21,6 +21,13 @@
       el: ".swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      375: {
+        slidesPerView: 3,
+        spaceBetween: 12,
+      }
+      
+    }
   });
 
 
