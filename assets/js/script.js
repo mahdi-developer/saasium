@@ -22,10 +22,22 @@
       clickable: true,
     },
     breakpoints: {
-      375: {
+      1200: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 5,
+        spaceBetween: 20,
+      },
+      500: {
+        slidesPerView: 4,
+        spaceBetween: 15,
+      },
+      350: {
         slidesPerView: 3,
         spaceBetween: 12,
-      }
+      },
       
     }
   });
@@ -52,12 +64,13 @@
         gap   : '2rem',
       },
       586: {
-        perPage: 2,
-        gap   : '2rem',
+        perPage: 3,
+        gap   : '1rem',
       },
       400: {
+        autoWidth: true,
         perPage: 2,
-        gap   : '1rem',
+        gap   : '12px',
       },
     }
   });
