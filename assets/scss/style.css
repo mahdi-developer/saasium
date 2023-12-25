@@ -10,19 +10,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @font-face {
   font-family: "Value Sans Pro";
-  src: url("/assets/fonts/ValueSansPro-Regular.woff2") format("woff2"), url("/assets/fonts/ValueSansPro-Regular.woff") format("woff"), url("/assets/fonts/ValueSansPro-Regular.ttf") format("truetype");
+  src: url("../fonts/ValueSansPro-Regular.woff2") format("woff2"), url("../fonts/ValueSansPro-Regular.woff") format("woff"), url("../fonts/ValueSansPro-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Value Sans Pro";
-  src: url("/assets/fonts/ValueSansPro-Medium.woff2") format("woff2"), url("/assets/fonts/ValueSansPro-Medium.woff") format("woff"), url("/assets/fonts/ValueSansPro-Medium.ttf") format("truetype");
+  src: url("../fonts/ValueSansPro-Medium.woff2") format("woff2"), url("../fonts/ValueSansPro-Medium.woff") format("woff"), url("../fonts/ValueSansPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Value Sans Pro";
-  src: url("/assets/fonts/ValueSansPro-Bold.woff2") format("woff2"), url("/assets/fonts/ValueSansPro-Bold.woff") format("woff"), url("/assets/fonts/ValueSansPro-Bold.ttf") format("truetype");
+  src: url("../fonts/ValueSansPro-Bold.woff2") format("woff2"), url("../fonts/ValueSansPro-Bold.woff") format("woff"), url("../fonts/ValueSansPro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -38,6 +38,14 @@ body {
   padding: 0;
   margin: 0;
   background-color: #fff;
+  font-family: "Value Sans Pro";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Value Sans Pro" !important;
+}
+
+p {
   font-family: "Value Sans Pro" !important;
 }
 
