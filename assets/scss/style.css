@@ -215,13 +215,6 @@ body {
   }
 }
 
-@media (max-width: 575px) {
-  .fs-6-12 {
-    font-size: 12px !important;
-    line-height: 20px !important;
-  }
-}
-
 .fs-17 {
   font-size: 17px;
   line-height: 28px;
@@ -282,6 +275,12 @@ body {
 
 .fs-1 {
   line-height: 60px;
+}
+@media (max-width: 575px) {
+  .fs-1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
 }
 
 .fs-44 {
@@ -617,12 +616,14 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .hero-wrapper .hero-content .mail-subscribe {
   position: relative;
   z-index: 99;
-}
-.hero-wrapper .hero-content .mail-subscribe .hero-mail {
   max-width: 540px;
   width: 100%;
+  margin: auto;
+}
+.hero-wrapper .hero-content .mail-subscribe .hero-mail {
   padding: 26px 24px;
   border: none;
+  width: 100%;
   border-radius: 100px;
   box-shadow: 0px 20px 40px 0px rgba(161, 141, 255, 0.1);
   color: rgba(107, 105, 116, 0.6);
@@ -632,8 +633,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 @media (max-width: 575px) {
   .hero-wrapper .hero-content .mail-subscribe .hero-mail {
-    max-width: 343px;
-    width: 100%;
     padding: 17px 24px;
     font-size: 12px !important;
     line-height: 20px;
@@ -656,14 +655,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
   .hero-wrapper .hero-content .mail-subscribe .hero-btn {
     transform: none;
     top: 13px;
-    right: 90px;
-  }
-}
-@media (max-width: 767px) {
-  .hero-wrapper .hero-content .mail-subscribe .hero-btn {
-    transform: none;
-    top: 12%;
-    right: 3%;
   }
 }
 @media (max-width: 575px) {
@@ -674,7 +665,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
     font-weight: 700;
     align-items: center;
     top: 8%;
-    right: 4%;
+    right: 2%;
   }
 }
 .hero-wrapper .hero-img {
@@ -818,6 +809,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
     margin-bottom: -30px;
   }
 }
+@media (max-width: 575px) {
+  .feature-first-wrapper .feature-content h6 {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+}
 
 .feature-second-wrapper {
   position: relative;
@@ -848,6 +845,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-image: url("../img/feature2-r.png");
   background-repeat: no-repeat;
   background-size: contain;
+  z-index: -9;
 }
 @media (max-width: 575px) {
   .feature-second-wrapper::after {
@@ -873,6 +871,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
     margin-bottom: -30px;
   }
 }
+@media (max-width: 575px) {
+  .feature-second-wrapper .feature-content h6 {
+    font-size: 12px !important;
+    line-height: 20px !important;
+  }
+}
 
 .feature-third-wrapper {
   background: linear-gradient(180deg, #feffff, #f7f6ff);
@@ -894,6 +898,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
     font-size: 80px;
     padding-top: 25px;
     margin-bottom: -30px;
+  }
+}
+@media (max-width: 575px) {
+  .feature-third-wrapper .feature-content h6 {
+    font-size: 12px !important;
+    line-height: 20px !important;
   }
 }
 
