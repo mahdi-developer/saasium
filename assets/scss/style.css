@@ -369,6 +369,10 @@ body {
   border-radius: 16px;
 }
 
+.mt-22 {
+  margin-top: 22px;
+}
+
 .mt-25 {
   margin-top: -25px;
 }
@@ -499,6 +503,43 @@ body {
   height: 2px;
   border-radius: 30px;
   background: linear-gradient(90deg, #603eff 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.hero-btn {
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  padding: 13px 30px !important;
+  color: var(--white);
+  background-color: var(--primary);
+  border: none;
+  border-radius: 30px;
+  display: flex;
+  gap: 6px;
+}
+@media (max-width: 991px) {
+  .hero-btn {
+    transform: none;
+    top: 13px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-btn {
+    padding: 10px 27px;
+    top: 9%;
+    right: 2%;
+  }
+}
+@media (max-width: 575px) {
+  .hero-btn {
+    padding: 9px 22px;
+    font-size: 13px !important;
+    line-height: normal !important;
+    font-weight: 700;
+    align-items: center;
+    top: 8%;
+    right: 2%;
+  }
 }
 
 /* helper , base classes  - END*/
@@ -689,43 +730,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
     padding: 17px 24px;
     font-size: 12px !important;
     line-height: 20px;
-  }
-}
-.hero-wrapper .hero-content .mail-subscribe .hero-btn {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  padding: 13px 30px !important;
-  color: var(--white);
-  background-color: var(--primary);
-  border: none;
-  border-radius: 30px;
-  display: flex;
-  gap: 6px;
-}
-@media (max-width: 991px) {
-  .hero-wrapper .hero-content .mail-subscribe .hero-btn {
-    transform: none;
-    top: 13px;
-  }
-}
-@media (max-width: 767px) {
-  .hero-wrapper .hero-content .mail-subscribe .hero-btn {
-    padding: 10px 27px;
-    top: 9%;
-    right: 2%;
-  }
-}
-@media (max-width: 575px) {
-  .hero-wrapper .hero-content .mail-subscribe .hero-btn {
-    padding: 9px 22px;
-    font-size: 13px !important;
-    line-height: normal !important;
-    font-weight: 700;
-    align-items: center;
-    top: 8%;
-    right: 2%;
   }
 }
 .hero-wrapper .hero-img {
@@ -1585,23 +1589,107 @@ header .navbar-nav .nav-item-wrap:hover::after {
   }
 }
 
+.benefit-wrapper {
+  position: relative;
+}
+.benefit-wrapper::before {
+  position: absolute;
+  content: "";
+  top: 130px;
+  right: 100px;
+  width: 210px;
+  height: 96px;
+  background-image: url("../img/benefits-rt.png");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+.benefit-wrapper::after {
+  position: absolute;
+  content: "";
+  bottom: 46px;
+  right: 164px;
+  width: 107px;
+  height: 97px;
+  background-image: url("../img/benefits-rb.png");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
 .benefit-wrapper .benefits-card {
   padding: 40px 55px 36px 55px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  background-color: var(--white);
   border-radius: 16px;
   box-shadow: 0px 10px 30px 0px rgba(27, 77, 173, 0.08);
+}
+.benefit-wrapper .benefit-left-position {
+  top: -35px;
+  left: -65px;
+  z-index: -9;
+}
+.benefit-wrapper .benefit-right-position {
+  right: -30px;
+  bottom: -20px;
+  z-index: -10;
+}
+
+.contact-wrapper {
   position: relative;
 }
-.benefit-wrapper .benefits-card::after {
+.contact-wrapper::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: 210px;
   left: 0;
-  background-image: url("../img/benefit-lt.png");
+  width: 110px;
+  height: 285px;
+  background-image: url("../img/oval.png");
   background-repeat: no-repeat;
-  width: 143px;
-  height: 550px;
+  z-index: 10;
+}
+.contact-wrapper .contact-content .contact-divider {
+  margin: 10px 0 60px 0;
+  border: 3px solid var(--primary);
+  border-radius: 30px;
+  max-width: 50px;
+  width: 100%;
+}
+.contact-wrapper .contact-content .contact-info .name, .contact-wrapper .contact-content .contact-info .phone, .contact-wrapper .contact-content .contact-info .email, .contact-wrapper .contact-content .contact-info .address {
+  padding: 13px 20px 13px 47px;
+  border: 1px solid var(--dark-5);
+  border-radius: 100px;
+  color: #94939A;
+  width: 100%;
+  height: 46px;
+  font-size: 13px !important;
+  background-position: center left 20px;
+  background-image: url("../img/profile.svg");
+  background-repeat: no-repeat;
+}
+.contact-wrapper .contact-content .contact-info .phone {
+  background-image: url("../img/phone.svg");
+}
+.contact-wrapper .contact-content .contact-info .email {
+  background-image: url("../img/sms.svg");
+}
+.contact-wrapper .contact-content .contact-info .address {
+  background-image: url("../img/location.svg");
+}
+.contact-wrapper .contact-content .contact-info .massages {
+  padding: 12px 20px;
+  border: 1px solid var(--dark-5);
+  border-radius: 10px;
+  color: #94939A;
+  width: 100%;
+  height: 150px !important;
+  resize: none;
+  text-transform: capitalize;
+}
+.contact-wrapper .contact-content .contact-info .massages:focus-visible {
+  outline: none;
+}
+.contact-wrapper .contact-content .contact-info .hero-btn {
+  transform: none;
 }/*# sourceMappingURL=style.css.map */

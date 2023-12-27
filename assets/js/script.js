@@ -78,7 +78,32 @@
   splide.mount();
 
 
-  var splide1 = new Splide("#testimonial", {
+  // var splide1 = new Splide("#testimonial", {
+  //   type: "loop",
+  //   perPage: 3,
+  //   perMove: 1,
+  //   gap   :  '40px',
+  //   pagination: true,
+  //   breakpoints: {
+  //     1350: {
+  //       gap   :  '20px',
+  
+  //     },
+  //     991: {
+  //       perPage: 2,
+  //       gap   :  '15px',
+  //     },
+  //     586: {
+  //       perPage: 1,
+  //       gap   :  '10px',
+  //     }
+  //   },
+  // });
+
+  // splide1.mount();
+
+
+  new Splide( '#testimonial', {
     type: "loop",
     perPage: 3,
     perMove: 1,
@@ -98,9 +123,20 @@
         gap   :  '10px',
       }
     },
-  });
+  } ).mount();
 
-  splide1.mount();
+
+  
+
+
+  // new Splide( '#testimonial2', {
+  //   type: "loop",
+  //   perPage: 3,
+  //   perMove: 1,
+  //   gap   :  '40px',
+  //   pagination: true,
+
+  // } ).mount();
 
   $(window).scroll(function() {
     if ($(this).scrollTop() > 50 ) {
