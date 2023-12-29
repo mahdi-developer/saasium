@@ -1,9 +1,9 @@
 // /**
 //  * @Script js for (Template/Project Name)
 //  *
-//  * @project     - Project Name
+//  * @project     - SaaSium
 //  * @author      - 
-//  * @created_by  - Asraful Hoque
+//  * @created_by  - Mahdi
 //  * @created_at  - 
 //  * @modified_by -
 //  */
