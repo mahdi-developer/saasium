@@ -1855,4 +1855,15 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border: none;
   border-radius: 30px;
   background-color: var(--primary);
+}
+
+.blog-details-wrapper .blog-details-hero h2 {
+  line-height: 50px !important;
+}
+.blog-details-wrapper .blog-details-hero .user-details .share .social-icons .footer-social:hover svg * {
+  fill: var(--primary);
+}
+.blog-details-wrapper .blog-details-hero .user-details .share .border {
+  border-right: 1px solid var(--dark-4);
+  height: 17px;
 }/*# sourceMappingURL=style.css.map */

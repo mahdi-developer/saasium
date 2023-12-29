@@ -1987,3 +1987,33 @@ header {
         background-color: var(--primary);
     }
 }
+
+//Blog Page Details Start
+//Blog Details Section
+.blog-details-wrapper {
+    .blog-details-hero {
+        h2 {
+            line-height: 50px !important;
+        }
+        .user-details {
+            .share {
+                .social-icons {
+                    .footer-social {
+                        &:hover {
+                            svg *{
+                                fill: var(--primary);
+                            }
+                        }
+                    }
+                }
+                .border {
+                    border-right: 1px solid var(--dark-4);
+                    height: 17px;
+                }
+            }
+        }
+    }
+}
+
+
+

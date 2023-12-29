@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon and touch icons -->
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon.svg">
+    <title>Blog</title>
+    <!-- link CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/scss/style.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="top py-17 ">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.svg" alt="logo" class="img-fluid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                        <li class="nav-item nav-item-wrap">
+                            <a class="nav-link fs-17 fw-normal pr-30" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item nav-item-wrap dropdown">
+                            <a class="nav-link dropdown-toggle fs-17 fw-normal text-clr-dark4 pr-50" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="/about.html">About us</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-wrap">
+                            <a class="nav-link active fs-17 fw-normal text-clr-dark4 pr-30" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item nav-item-wrap dropdown">
+                            <a class="nav-link dropdown-toggle fs-17 fw-normal text-clr-dark4 pr-50" href="#"
+                                id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                                Product Tour
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item nav-item-wrap">
+                            <a class="nav-link fs-17 fw-normal text-clr-dark4" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="ms-3 mb-3 ms-lg-0 mb-lg-0 d-flex ">
+                        <a class="header-btn fs-14 fw-bold radius-30 text-white px-4" href="#">Sign Up Free
+                            <span><img src="assets/img/header-btn-arrow.svg" alt=""></span></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--/ header -->
+
+    <!-- Banner Section -->
+    <section class="blog-details-wrapper banner-bg">
+        <div class="container">
+            <div class="blog-details-hero">
+                <h6 class="ff-p fs-18 fw-medium text-clr-primary">Blog Category</h6>
+                <h2 class="fs-1 fw-bold text-clr-dark1 pb-lg-2 pb-0">
+                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected.
+                </h2>
+                <div class="user-details d-flex">
+                    <div class="share d-flex align-items-center gap-3">
+                        <h6 class="ff-p fs-6 fw-normal m-0">Share on:</h6>
+                        <div class="social-icons d-flex align-items-center gap-4">
+                            <a href="#" class="text-decoration-none list-unstyled footer-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M20 10.0611C20 4.50451 15.5229 0 10 0C4.47715 0 0 4.50451 0 10.0611C0 15.0828 3.65684 19.2452 8.4375 20V12.9694H5.89844V10.0611H8.4375V7.84452C8.4375 5.32296 9.93047 3.93012 12.2146 3.93012C13.3084 3.93012 14.4531 4.12663 14.4531 4.12663V6.60261H13.1922C11.95 6.60261 11.5625 7.37822 11.5625 8.17465V10.0611H14.3359L13.8926 12.9694H11.5625V20C16.3432 19.2452 20 15.0828 20 10.0611Z" fill="#6B6974"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled footer-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M10 1.80078C12.6719 1.80078 12.9883 1.8125 14.0391 1.85937C15.0156 1.90234 15.543 2.06641 15.8945 2.20313C16.3594 2.38281 16.6953 2.60156 17.043 2.94922C17.3945 3.30078 17.6094 3.63281 17.7891 4.09766C17.9258 4.44922 18.0898 4.98047 18.1328 5.95313C18.1797 7.00781 18.1914 7.32422 18.1914 9.99219C18.1914 12.6641 18.1797 12.9805 18.1328 14.0313C18.0898 15.0078 17.9258 15.5352 17.7891 15.8867C17.6094 16.3516 17.3906 16.6875 17.043 17.0352C16.6914 17.3867 16.3594 17.6016 15.8945 17.7813C15.543 17.918 15.0117 18.082 14.0391 18.125C12.9844 18.1719 12.668 18.1836 10 18.1836C7.32813 18.1836 7.01172 18.1719 5.96094 18.125C4.98438 18.082 4.45703 17.918 4.10547 17.7813C3.64063 17.6016 3.30469 17.3828 2.95703 17.0352C2.60547 16.6836 2.39063 16.3516 2.21094 15.8867C2.07422 15.5352 1.91016 15.0039 1.86719 14.0313C1.82031 12.9766 1.80859 12.6602 1.80859 9.99219C1.80859 7.32031 1.82031 7.00391 1.86719 5.95313C1.91016 4.97656 2.07422 4.44922 2.21094 4.09766C2.39063 3.63281 2.60938 3.29688 2.95703 2.94922C3.30859 2.59766 3.64063 2.38281 4.10547 2.20313C4.45703 2.06641 4.98828 1.90234 5.96094 1.85937C7.01172 1.8125 7.32813 1.80078 10 1.80078ZM10 0C7.28516 0 6.94531 0.0117187 5.87891 0.0585938C4.81641 0.105469 4.08594 0.277344 3.45313 0.523437C2.79297 0.78125 2.23438 1.12109 1.67969 1.67969C1.12109 2.23438 0.78125 2.79297 0.523438 3.44922C0.277344 4.08594 0.105469 4.8125 0.0585938 5.875C0.0117188 6.94531 0 7.28516 0 10C0 12.7148 0.0117188 13.0547 0.0585938 14.1211C0.105469 15.1836 0.277344 15.9141 0.523438 16.5469C0.78125 17.207 1.12109 17.7656 1.67969 18.3203C2.23438 18.875 2.79297 19.2188 3.44922 19.4727C4.08594 19.7188 4.8125 19.8906 5.875 19.9375C6.94141 19.9844 7.28125 19.9961 9.99609 19.9961C12.7109 19.9961 13.0508 19.9844 14.1172 19.9375C15.1797 19.8906 15.9102 19.7188 16.543 19.4727C17.1992 19.2188 17.7578 18.875 18.3125 18.3203C18.8672 17.7656 19.2109 17.207 19.4648 16.5508C19.7109 15.9141 19.8828 15.1875 19.9297 14.125C19.9766 13.0586 19.9883 12.7188 19.9883 10.0039C19.9883 7.28906 19.9766 6.94922 19.9297 5.88281C19.8828 4.82031 19.7109 4.08984 19.4648 3.45703C19.2188 2.79297 18.8789 2.23438 18.3203 1.67969C17.7656 1.125 17.207 0.78125 16.5508 0.527344C15.9141 0.28125 15.1875 0.109375 14.125 0.0625C13.0547 0.0117188 12.7148 0 10 0Z" fill="#6B6974"/>
+                                    <path d="M10 4.86328C7.16406 4.86328 4.86328 7.16406 4.86328 10C4.86328 12.8359 7.16406 15.1367 10 15.1367C12.8359 15.1367 15.1367 12.8359 15.1367 10C15.1367 7.16406 12.8359 4.86328 10 4.86328ZM10 13.332C8.16016 13.332 6.66797 11.8398 6.66797 10C6.66797 8.16016 8.16016 6.66797 10 6.66797C11.8398 6.66797 13.332 8.16016 13.332 10C13.332 11.8398 11.8398 13.332 10 13.332Z" fill="#6B6974"/>
+                                    <path d="M16.5391 4.66012C16.5391 5.32418 16 5.85934 15.3398 5.85934C14.6758 5.85934 14.1406 5.32028 14.1406 4.66012C14.1406 3.99606 14.6797 3.4609 15.3398 3.4609C16 3.4609 16.5391 3.99996 16.5391 4.66012Z" fill="#6B6974"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled footer-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M6.2918 18.1248C13.8371 18.1248 17.9652 11.8721 17.9652 6.45135C17.9652 6.27557 17.9613 6.09588 17.9535 5.9201C18.7566 5.33935 19.4496 4.62001 20 3.79588C19.2521 4.12863 18.458 4.34595 17.6449 4.44041C18.5011 3.92722 19.1421 3.12102 19.4492 2.17127C18.6438 2.64859 17.763 2.98531 16.8445 3.16697C16.2257 2.50943 15.4075 2.07406 14.5164 1.92817C13.6253 1.78228 12.711 1.934 11.9148 2.35988C11.1186 2.78575 10.4848 3.46205 10.1115 4.28422C9.73825 5.10639 9.64619 6.02864 9.84961 6.90838C8.21874 6.82654 6.62328 6.40288 5.16665 5.66488C3.71002 4.92687 2.42474 3.89099 1.39414 2.62439C0.870333 3.5275 0.710047 4.59617 0.945859 5.61321C1.18167 6.63024 1.79589 7.51934 2.66367 8.09978C2.01219 8.0791 1.37498 7.9037 0.804688 7.58807V7.63885C0.804104 8.58659 1.13175 9.50529 1.73192 10.2388C2.3321 10.9723 3.16777 11.4753 4.09687 11.6623C3.49338 11.8274 2.85999 11.8515 2.2457 11.7326C2.50788 12.5477 3.01798 13.2605 3.70481 13.7717C4.39164 14.2829 5.22093 14.567 6.07695 14.5842C4.62369 15.7257 2.82848 16.3449 0.980469 16.342C0.652739 16.3415 0.325333 16.3214 0 16.2818C1.87738 17.4863 4.06128 18.126 6.2918 18.1248Z" fill="#6B6974"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled footer-social">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" fill="none">
+                                    <path d="M19.8008 4.00004C19.8008 4.00004 19.6055 2.62113 19.0039 2.01566C18.2422 1.21879 17.3906 1.21488 17 1.16801C14.2031 0.964882 10.0039 0.964882 10.0039 0.964882H9.99609C9.99609 0.964882 5.79687 0.964882 3 1.16801C2.60938 1.21488 1.75781 1.21879 0.996094 2.01566C0.394531 2.62113 0.203125 4.00004 0.203125 4.00004C0.203125 4.00004 0 5.62113 0 7.23832V8.75394C0 10.3711 0.199219 11.9922 0.199219 11.9922C0.199219 11.9922 0.394531 13.3711 0.992187 13.9766C1.75391 14.7735 2.75391 14.7461 3.19922 14.8321C4.80078 14.9844 10 15.0313 10 15.0313C10 15.0313 14.2031 15.0235 17 14.8243C17.3906 14.7774 18.2422 14.7735 19.0039 13.9766C19.6055 13.3711 19.8008 11.9922 19.8008 11.9922C19.8008 11.9922 20 10.375 20 8.75394V7.23832C20 5.62113 19.8008 4.00004 19.8008 4.00004ZM7.93359 10.5938V4.97269L13.3359 7.79301L7.93359 10.5938Z" fill="#6B6974"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="border"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Blog Card Section -->
+    <!-- <section class="blog-card-wrapper py-110">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog1.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Robert Fox</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                Sed posuere egestas nunc  tortor euismod justo 
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog2.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Ronald Richards</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                These Are the 7 Best UI Design Courses. 
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog3.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Ronald Richards</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                The Complete Guide to UI Breadcrumbs
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card my-40">
+                        <div class="blog-img">
+                            <img src="assets/img/blog4.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Robert Fox</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                These Are the 7 Best UI Design Courses. 
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card my-40">
+                        <div class="blog-img">
+                            <img src="assets/img/blog5.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Robert Fox</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                Sed posuere egestas nunc  tortor euismod justo  
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card my-40">
+                        <div class="blog-img">
+                            <img src="assets/img/blog6.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Albert Flores</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                Here’s How to Become a 3D Designer in 2023
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog7.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Robert Fox</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                The Complete Guide to UI Breadcrumbs 
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog8.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Albert Flores</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                Here’s How to Become a 3D Designer in 2023  
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="assets/img/blog9.png" class="img-fluid w-100 radius-t16">
+                        </div>
+                        <div class="card-content">
+                            <div class="user-info d-flex gap-4 pb-19">
+                                <div class="date d-flex align-items-center gap-2">
+                                    <img src="assets/img/calendar.svg" class="img-fluid">
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Jan 20, 2021</p>
+                                </div>
+                                <div class="name d-flex align-items-center gap-2">
+                                    <span>
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.10671 7.24668C8.04004 7.24001 7.96004 7.24001 7.88671 7.24668C6.30004 7.19334 5.04004 5.89334 5.04004 4.29334C5.04004 2.66001 6.36004 1.33334 8.00004 1.33334C9.63337 1.33334 10.96 2.66001 10.96 4.29334C10.9534 5.89334 9.69337 7.19334 8.10671 7.24668Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M4.77348 9.70666C3.16014 10.7867 3.16014 12.5467 4.77348 13.62C6.60681 14.8467 9.61348 14.8467 11.4468 13.62C13.0601 12.54 13.0601 10.78 11.4468 9.70666C9.62014 8.48666 6.61348 8.48666 4.77348 9.70666Z" stroke="#6B6974" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                    <p class="ff-p fs-13 fw-medium text-clr-dark4 m-0">Albert Flores</p>
+                                </div>
+                            </div>
+                            <h4 class="fs-4 fw-medium lh-32 text-clr-dark1 mb-4">
+                                What Is Work From Home? The 2023 WFH Guide
+                            </h4>
+                            <a href="#" class="text-decoration-none list-unstyled fs-15 fw-medium text-clr-secondary blog-link "> Read more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="blog-btn fs-6 text-clr-white fw-bold mt-60 mx-auto">Load More
+                <span>
+                    <img src="assets/img/header-btn-arrow.svg" alt="">
+                </span>
+            </button>
+        </div>
+    </section> -->
+    <!-- Feature Third Section End -->
+
+    <!-- Footer Section -->
+    <section class="footer-wrapper text-clr-white">
+        <div class="container">
+            <div class="footer-wrap py-84">
+                <div class="row">
+                    <div class="col-lg-3 col-md-8 col-12">
+                        <div class="footer-logo pb-40">
+                            <img src="assets/img/footer-logo.svg" class="img-fluid">
+                        </div>
+                        <a href="#" class="list-unstyled text-decoration-none text-clr-white">
+                            <div class="phone d-flex gap-2">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M18.3084 15.2748C18.3084 15.5748 18.2417 15.8832 18.1 16.1832C17.9584 16.4832 17.775 16.7665 17.5334 17.0332C17.125 17.4832 16.675 17.8082 16.1667 18.0165C15.6667 18.2248 15.125 18.3332 14.5417 18.3332C13.6917 18.3332 12.7834 18.1332 11.825 17.7248C10.8667 17.3165 9.90835 16.7665 8.95835 16.0748C8.00002 15.3748 7.09169 14.5998 6.22502 13.7415C5.36669 12.8748 4.59169 11.9665 3.90002 11.0165C3.21669 10.0665 2.66669 9.1165 2.26669 8.17484C1.86669 7.22484 1.66669 6.3165 1.66669 5.44984C1.66669 4.88317 1.76669 4.3415 1.96669 3.8415C2.16669 3.33317 2.48335 2.8665 2.92502 2.44984C3.45835 1.92484 4.04169 1.6665 4.65835 1.6665C4.89169 1.6665 5.12502 1.7165 5.33335 1.8165C5.55002 1.9165 5.74169 2.0665 5.89169 2.28317L7.82502 5.00817C7.97502 5.2165 8.08335 5.40817 8.15835 5.5915C8.23335 5.7665 8.27502 5.9415 8.27502 6.09984C8.27502 6.29984 8.21669 6.49984 8.10002 6.6915C7.99169 6.88317 7.83335 7.08317 7.63335 7.28317L7.00002 7.9415C6.90835 8.03317 6.86669 8.1415 6.86669 8.27484C6.86669 8.3415 6.87502 8.39984 6.89169 8.4665C6.91669 8.53317 6.94169 8.58317 6.95835 8.63317C7.10835 8.90817 7.36669 9.2665 7.73335 9.69984C8.10835 10.1332 8.50835 10.5748 8.94169 11.0165C9.39169 11.4582 9.82502 11.8665 10.2667 12.2415C10.7 12.6082 11.0584 12.8582 11.3417 13.0082C11.3834 13.0248 11.4334 13.0498 11.4917 13.0748C11.5584 13.0998 11.625 13.1082 11.7 13.1082C11.8417 13.1082 11.95 13.0582 12.0417 12.9665L12.675 12.3415C12.8834 12.1332 13.0834 11.9748 13.275 11.8748C13.4667 11.7582 13.6584 11.6998 13.8667 11.6998C14.025 11.6998 14.1917 11.7332 14.375 11.8082C14.5584 11.8832 14.75 11.9915 14.9584 12.1332L17.7167 14.0915C17.9334 14.2415 18.0834 14.4165 18.175 14.6248C18.2584 14.8332 18.3084 15.0415 18.3084 15.2748Z"
+                                        stroke="#603EFF" stroke-width="1.5" stroke-miterlimit="10" />
+                                    <path
+                                        d="M15.4167 7.49967C15.4167 6.99967 15.025 6.23301 14.4417 5.60801C13.9083 5.03301 13.2 4.58301 12.5 4.58301"
+                                        stroke="#603EFF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M18.3333 7.49984C18.3333 4.27484 15.725 1.6665 12.5 1.6665"
+                                        stroke="#603EFF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                                <h6 class="ff-p fs-6 fw-medium">
+                                    +88 012 698 / +88 458 9651
+                                </h6>
+                            </div>
+                        </a>
+                        <a href="#" class="list-unstyled text-decoration-none text-clr-white">
+                            <div class="email d-flex gap-2 py-2">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 17.0832H5.83335C3.33335 17.0832 1.66669 15.8332 1.66669 12.9165V7.08317C1.66669 4.1665 3.33335 2.9165 5.83335 2.9165H14.1667C16.6667 2.9165 18.3334 4.1665 18.3334 7.08317V9.58317"
+                                        stroke="#603EFF" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M14.1666 7.5L11.5583 9.58333C10.7 10.2667 9.29164 10.2667 8.43331 9.58333L5.83331 7.5"
+                                        stroke="#603EFF" stroke-width="1.5" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path
+                                        d="M15.1667 17.8333C16.6394 17.8333 17.8333 16.6394 17.8333 15.1667C17.8333 13.6939 16.6394 12.5 15.1667 12.5C13.6939 12.5 12.5 13.6939 12.5 15.1667C12.5 16.6394 13.6939 17.8333 15.1667 17.8333Z"
+                                        stroke="#603EFF" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M18.3333 18.3333L17.5 17.5" stroke="#603EFF" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <h6 class="ff-p fs-6 fw-medium">
+                                    example@gmail.com
+                                </h6>
+                            </div>
+                        </a>
+                        <a href="#" class="list-unstyled text-decoration-none text-clr-white">
+                            <div class="location d-flex gap-2">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.01669 7.07484C4.65836 -0.141827 15.35 -0.133494 16.9834 7.08317C17.9417 11.3165 15.3084 14.8998 13 17.1165C11.325 18.7332 8.67502 18.7332 6.99169 17.1165C4.69169 14.8998 2.05836 11.3082 3.01669 7.07484Z"
+                                        stroke="#603EFF" stroke-width="1.5" />
+                                    <path d="M7.70831 9.58333L8.95831 10.8333L12.2916 7.5" stroke="#603EFF"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <h6 class="ff-p fs-6 fw-medium mb-5 mb-lg-0">
+                                    4140 Parker Rd. Allentown, New Mexico 31134
+                                </h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-7">
+                        <div class="navigation pb-5 pb-md-0">
+                            <h5 class="fs-5 fw-bold">Navigation</h5>
+                            <div class="footer-border"></div>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-semi-bold text-white pt-4">About Us</p>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3 py-1">Installation Process</p>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3 py-1">Terms of use</p>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3 py-1">Privacy policy</p>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3">My Account</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-5">
+                        <div class="resources pb-5 pb-md-0 mt-lg-0 mt-md-4">
+                            <h5 class="fs-5 fw-bold">Resources</h5>
+                            <div class="footer-border"></div>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3 py-1 pt-4">Testimonial</p>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3 py-1">Pricing Plan</p>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3 py-1">Faq</p>
+                            </a>
+                            <a href="#" class="text-decoration-none list-unstyled">
+                                <p class="ff-p fs-18 fw-normal text-clr3">Contact Us</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-8 col-12">
+                        <div class="newsletter mt-lg-0 mt-md-4">
+                            <h5 class="fs-5 fw-bold">Newsletter</h5>
+                            <div class="footer-border"></div>
+                            <h6 class="ff-p fs-6 fw-medium text-clr4 pt-4 pb-4">Join over 1M people getting our emails</h6>
+                            <input type="text" placeholder="Email address" class="form-control ff-p fs-13 fw-medium">
+                            <button
+                                class="form-control-btn d-flex w-100 gap-2 justify-content-center radius-30 border-0 fs-14 fw-medium text-clr-white bg-clr-primary align-items-center mt-lg-4 mt-3">Subscribe
+                                Now <span><img src="assets/img/header-btn-arrow.svg" alt=""></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright-wrapper d-block d-md-flex justify-content-between">
+                <h6 class="fs-6 fw-normal text-clr-dark5 mb-3 mb-md-0">© 2023 . All Rights Reserved</h6>
+                <div class="social-icons d-flex gap-3">
+                    <a href="#" class="text-decoration-none list-unstyled footer-social">
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M8.08433 14V7.61441H10.2268L10.5483 5.12509H8.08433V3.53603C8.08433 2.81554 8.28359 2.32453 9.31793 2.32453L10.635 2.32399V0.097461C10.4072 0.0678617 9.62539 0 8.71539 0C6.81517 0 5.51425 1.15988 5.51425 3.28949V5.12509H3.36523V7.61441H5.51425V14H8.08433Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-decoration-none list-unstyled footer-social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path
+                                d="M4.56132 12.2566C9.51442 12.2566 12.2231 8.15313 12.2231 4.59489C12.2231 4.47835 12.2206 4.36228 12.2154 4.24686C12.7412 3.86673 13.1981 3.39236 13.5587 2.85242C13.0762 3.06696 12.5569 3.2112 12.0123 3.27646C12.5682 2.94295 12.995 2.41561 13.1963 1.78698C12.6761 2.09543 12.0998 2.31953 11.4865 2.44057C10.9951 1.91717 10.2954 1.58984 9.52076 1.58984C8.03376 1.58984 6.82777 2.79575 6.82777 4.28226C6.82777 4.49368 6.85145 4.69916 6.8976 4.89629C4.65957 4.78368 2.67492 3.71222 1.34693 2.08283C1.11577 2.48071 0.982368 2.94303 0.982368 3.43634C0.982368 4.37047 1.45778 5.19536 2.18065 5.67775C1.73887 5.66419 1.3239 5.5429 0.961098 5.34104C0.960696 5.35236 0.960696 5.36335 0.960696 5.37539C0.960696 6.67954 1.88889 7.76842 3.1212 8.01515C2.89485 8.07672 2.6567 8.10987 2.41109 8.10987C2.23788 8.10987 2.069 8.09285 1.90494 8.06131C2.24775 9.13124 3.24192 9.90981 4.42054 9.93165C3.49885 10.654 2.33781 11.0843 1.07596 11.0843C0.85892 11.0843 0.644371 11.0719 0.433594 11.047C1.62537 11.8109 3.04053 12.2567 4.5614 12.2567"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-decoration-none list-unstyled footer-social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path
+                                d="M7.19014 0C3.35309 0 1.3125 2.45886 1.3125 5.13998C1.3125 6.38341 2.00728 7.93398 3.11946 8.42575C3.28834 8.50188 3.38022 8.46951 3.41784 8.31287C3.4511 8.19387 3.59723 7.62072 3.66811 7.35033C3.68998 7.2637 3.67861 7.18845 3.6086 7.10707C3.23934 6.68005 2.9462 5.90214 2.9462 5.17236C2.9462 3.3024 4.43289 1.48669 6.96263 1.48669C9.15023 1.48669 10.6807 2.90776 10.6807 4.94047C10.6807 7.23745 9.46524 8.82652 7.88579 8.82652C7.01163 8.82652 6.3606 8.14049 6.56711 7.2917C6.8165 6.28103 7.30564 5.19423 7.30564 4.46533C7.30564 3.81167 6.93638 3.2709 6.18209 3.2709C5.29218 3.2709 4.57027 4.15206 4.57027 5.33512C4.57027 6.08677 4.83628 6.5943 4.83628 6.5943C4.83628 6.5943 3.95599 10.1505 3.79236 10.8146C3.51585 11.939 3.82999 13.76 3.85711 13.9166C3.87374 14.0033 3.97087 14.0304 4.02512 13.9595C4.11175 13.8457 5.1758 12.3276 5.47419 11.2303C5.58269 10.8304 6.02809 9.20891 6.02809 9.20891C6.32122 9.73831 7.16739 10.182 8.06868 10.182C10.7498 10.182 12.6871 7.82548 12.6871 4.9011C12.6775 2.09747 10.2782 0 7.19014 0Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-decoration-none list-unstyled footer-social">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <g clip-path="url(#clip0_49_1546)">
+                                <path
+                                    d="M0.016832 9.88396C0.0496299 10.6278 0.169923 11.1392 0.342243 11.5824C0.520012 12.0528 0.793503 12.4739 1.15182 12.824C1.50191 13.1795 1.92582 13.4558 2.39075 13.6308C2.83645 13.8031 3.34519 13.9234 4.08906 13.9562C4.83849 13.9918 5.0764 14 6.97716 14C8.87792 14 9.11584 13.9918 9.86249 13.959C10.6064 13.9262 11.1178 13.8058 11.5608 13.6336C12.0313 13.4558 12.4524 13.1823 12.8025 12.824C13.158 12.4739 13.4342 12.05 13.6093 11.5851C13.7816 11.1392 13.9019 10.6306 13.9347 9.88674C13.9703 9.13731 13.9785 8.89939 13.9785 6.99863C13.9785 5.09787 13.9703 4.85995 13.9375 4.1133C13.9047 3.36943 13.7843 2.85802 13.612 2.41488C13.4342 1.9445 13.158 1.52337 12.8025 1.17328C12.4524 0.817737 12.0285 0.541469 11.5636 0.366477C11.1178 0.194156 10.6091 0.0738633 9.86516 0.0410656C9.11861 0.00816102 8.88059 4.24073e-05 6.97983 4.25735e-05C5.07907 4.27397e-05 4.84116 0.00816139 4.09451 0.0410661C3.35064 0.073864 2.83923 0.194157 2.3962 0.366478C1.45533 0.730242 0.711454 1.47412 0.347691 2.41488C0.175477 2.86069 0.0550776 3.36943 0.0222798 4.1133C-0.010517 4.85996 -0.0187433 5.09787 -0.0187432 6.99863C-0.018743 8.8994 -0.0159649 9.13731 0.016832 9.88396ZM1.27756 4.168C1.30768 3.48427 1.42253 3.11506 1.51825 2.86892C1.7535 2.25901 2.23755 1.77496 2.84746 1.53971C3.0936 1.44399 3.46548 1.32914 4.14654 1.29912C4.88496 1.26622 5.10642 1.2581 6.97438 1.2581C8.84234 1.2581 9.06658 1.26622 9.80234 1.29912C10.4861 1.32914 10.8553 1.44399 11.1014 1.53971C11.4049 1.65188 11.6812 1.82965 11.9054 2.06212C12.1379 2.28914 12.3157 2.56263 12.4278 2.86614C12.5236 3.11228 12.6384 3.48427 12.6684 4.16522C12.7013 4.90365 12.7095 5.12522 12.7095 6.99318C12.7095 8.86115 12.7013 9.08539 12.6684 9.82104C12.6384 10.5048 12.5236 10.874 12.4278 11.1201C12.3157 11.4237 12.1379 11.6999 11.9027 11.9242C11.6757 12.1567 11.4023 12.3345 11.0986 12.4466C10.8525 12.5423 10.4805 12.6571 9.79956 12.6872C9.06114 12.72 8.83957 12.7283 6.97171 12.7283C5.10098 12.7283 4.87951 12.72 4.14376 12.6872C3.46003 12.6571 3.09082 12.5423 2.84468 12.4466C2.54117 12.3345 2.2649 12.1567 2.04066 11.9242C1.80819 11.6972 1.63043 11.4237 1.51825 11.1201C1.42253 10.874 1.30769 10.5021 1.27756 9.82104C1.24476 9.08261 1.23654 8.86115 1.23654 6.99318C1.23654 5.12522 1.24476 4.90643 1.27756 4.168Z"
+                                    fill="white" />
+                                <path
+                                    d="M6.97391 10.5947C8.95939 10.5947 10.5703 8.98391 10.5703 6.99832C10.5703 5.01273 8.95939 3.40192 6.97391 3.40192C4.98832 3.40192 3.3775 5.01273 3.3775 6.99832C3.3775 8.98391 4.98832 10.5947 6.97391 10.5947ZM6.97391 4.66542C8.26199 4.66542 9.30681 5.71014 9.30681 6.99832C9.30681 8.28651 8.26199 9.33122 6.97391 9.33122C5.68572 9.33122 4.64101 8.28651 4.64101 6.99832C4.64101 5.71014 5.68572 4.66542 6.97391 4.66542Z"
+                                    fill="white" />
+                                <path
+                                    d="M2.39588 10.7366C2.39588 10.2729 2.77183 9.89697 3.23559 9.89697C3.69925 9.89697 4.0752 10.2729 4.0752 10.7366C4.0752 11.2003 3.69925 11.5762 3.23559 11.5762C2.77183 11.5762 2.39588 11.2003 2.39588 10.7366Z"
+                                    fill="white" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_49_1546">
+                                    <rect x="14" y="14" width="14" height="14" transform="rotate(180 14 14)"
+                                        fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section End -->
+    <div class='scrolltop'>
+        <div class='scroll icon'>
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M12.0467 6.38016L8.00004 2.3335L3.95337 6.38016" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 13.6668V2.44678" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <!-- Link JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!-- Script JS -->
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
