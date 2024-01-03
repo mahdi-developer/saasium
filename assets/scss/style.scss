@@ -2767,6 +2767,11 @@ header {
         border: 2px solid rgba(96, 62, 255, 0.55);
         border-radius: 16px;
         overflow: hidden;
+        .active {
+            border: 3px solid var(--primary-shad);
+            // border-style: inset;
+            border-style: ;
+        }
         .pricing-title {
             .price-header {
                 min-height: 241px;
@@ -2784,11 +2789,6 @@ header {
         }
 
         .pricing-wrapper {
-            border: 1px solid transparent;
-            &:hover {
-                border: 1px solid var(--primary-shad);
-
-            }
             .price-header {
                 min-height: 241px;
                 height: 100%;
@@ -2801,6 +2801,12 @@ header {
                     .free-trial {
                         padding: 9px 22px;
                         border: 1px solid var(--primary);
+                        border-radius: 30px;
+                        margin-bottom: 35px;
+                    }
+                    .free-trial-bw {
+                        padding: 9px 22px;
+                        background-color: var(--white);
                         border-radius: 30px;
                         margin-bottom: 35px;
                     }

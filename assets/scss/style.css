@@ -2532,6 +2532,10 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border-radius: 16px;
   overflow: hidden;
 }
+.subscription-wrapper .pricing-table .active {
+  border: 3px solid var(--primary-shad);
+  border-style: unset;
+}
 .subscription-wrapper .pricing-table .pricing-title .price-header {
   min-height: 241px;
   height: 100%;
@@ -2545,12 +2549,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
   align-items: center;
   gap: 12px;
 }
-.subscription-wrapper .pricing-table .pricing-wrapper {
-  border: 1px solid transparent;
-}
-.subscription-wrapper .pricing-table .pricing-wrapper:hover {
-  border: 1px solid var(--primary-shad);
-}
 .subscription-wrapper .pricing-table .pricing-wrapper .price-header {
   min-height: 241px;
   height: 100%;
@@ -2562,6 +2560,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial {
   padding: 9px 22px;
   border: 1px solid var(--primary);
+  border-radius: 30px;
+  margin-bottom: 35px;
+}
+.subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial-bw {
+  padding: 9px 22px;
+  background-color: var(--white);
   border-radius: 30px;
   margin-bottom: 35px;
 }
