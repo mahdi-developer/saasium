@@ -407,6 +407,10 @@ body {
     font-weight: 700;
 }
 
+.ls-1 {
+    letter-spacing: 1.26px;
+}
+
 .lh-26 {
     line-height: 26px !important;
 }
@@ -490,6 +494,10 @@ body {
     @media (max-width:575px) {
         padding-bottom: 50px;
     }
+}
+
+.pb-110 {
+    padding-bottom: 110px;
 }
 
 .pr-30 {
@@ -622,6 +630,16 @@ body {
         top: 8%;
         right: 2%;
     }
+}
+
+//Awesome features btn
+.features-btn {
+    padding: 17px 36px;
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 30px;
+    display: inline-block;
+    color: var(--white);
 }
 
 
@@ -2688,6 +2706,7 @@ header {
 }
 
 .subscription-wrapper {
+    background: linear-gradient(180deg, #FFFFFF 0%, #F8F7FF 100%);
     .package-toggler {
         .top {
             display: flex;
@@ -2696,8 +2715,8 @@ header {
             .switch {
                 position: relative;
                 display: inline-block;
-                width: 72px;
-                height: 33px;
+                width: 54px;
+                height: 30px;
             }
             
             .switch input {
@@ -2719,10 +2738,10 @@ header {
             .slider:before {
                 position: absolute;
                 content: "";
-                height: 26px;
-                width: 26px;
+                height: 18px;
+                width: 18px;
                 left: 4px;
-                bottom: 4px;
+                bottom: 6px;
                 background-color: white;
                 -webkit-transition: 0.4s;
                 transition: 0.4s;
@@ -2736,11 +2755,11 @@ header {
             input:checked + .slider:before {
                 -webkit-transform: translateX(26px);
                 -ms-transform: translateX(26px);
-                transform: translateX(40px);
+                transform: translateX(28px);
             }
             
             .slider.round {
-                border-radius: 34px;
+                border-radius: 30px;
             }
             
             .slider.round:before {
@@ -2767,11 +2786,6 @@ header {
         border: 2px solid rgba(96, 62, 255, 0.55);
         border-radius: 16px;
         overflow: hidden;
-        .active {
-            border: 3px solid var(--primary-shad);
-            // border-style: inset;
-            border-style: ;
-        }
         .pricing-title {
             .price-header {
                 min-height: 241px;
@@ -2814,6 +2828,10 @@ header {
             }
             
         }
+        .active {
+            border-inline: 3px solid var(--primary-shad);
+            
+        }
         .service-mark {
             min-height: 64px;
             height: 100%;
@@ -2821,5 +2839,51 @@ header {
             align-items: center;
             justify-content: center;
         }
+    }
+}
+
+// Features Page Start
+//Awesome Feature Section
+.awesome-feature-section {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 210px;
+        height: 464px;
+        width: 152px;
+        background-image: url("../img/feature1-l.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -2;
+
+        @media (max-width:575px) {
+            display: none;
+        }
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        top: 145px;
+        right: 40px;
+        width: 210px;
+        height: 96px;
+        background-image: url("../img/feature1-r.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: -3;
+
+        @media (max-width:575px) {
+            display: none;
+        }
+    }
+
+    .awesome-feature-content {
+       
+        
+
+        
     }
 }
