@@ -644,6 +644,9 @@ body {
   display: inline-block;
   color: var(--white);
 }
+.features-btn:hover {
+  color: var(--white);
+}
 
 .banner-bg {
   background: url("../img/banner-bg.png");
@@ -2596,10 +2599,10 @@ header .navbar-nav .nav-item-wrap:hover::after {
   justify-content: center;
 }
 
-.awesome-feature-section {
+.awesome-feature {
   position: relative;
 }
-.awesome-feature-section::before {
+.awesome-feature::before {
   position: absolute;
   content: "";
   left: 0;
@@ -2612,11 +2615,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
   z-index: -2;
 }
 @media (max-width: 575px) {
-  .awesome-feature-section::before {
+  .awesome-feature::before {
     display: none;
   }
 }
-.awesome-feature-section::after {
+.awesome-feature::after {
   position: absolute;
   content: "";
   top: 145px;
@@ -2629,7 +2632,70 @@ header .navbar-nav .nav-item-wrap:hover::after {
   z-index: -3;
 }
 @media (max-width: 575px) {
-  .awesome-feature-section::after {
+  .awesome-feature::after {
     display: none;
   }
+}
+
+.conversion-wrapper::before {
+  position: absolute;
+  content: "";
+  bottom: 19px;
+  left: 76px;
+  background: url("../img/feature2-l.png");
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 96px;
+}
+.conversion-wrapper::after {
+  position: absolute;
+  content: "";
+  top: -136px;
+  right: 0;
+  background: url("../img/conversion-pr.png");
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 555px;
+}
+
+.speed::before {
+  position: absolute;
+  content: "";
+  bottom: -235px;
+  left: 0;
+  background: url("../img/speed-l.png");
+  background-repeat: no-repeat;
+  width: 238px;
+  height: 555px;
+}
+.speed::after {
+  position: absolute;
+  content: "";
+  top: 191px;
+  right: 40px;
+  background: url("../img/speed-r.png");
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 96px;
+}
+
+.follow-up-wrapper::before {
+  position: absolute;
+  content: "";
+  bottom: 151px;
+  left: 76px;
+  background: url("../img/follow-pl.png");
+  background-repeat: no-repeat;
+  width: 210px;
+  height: 96px;
+}
+.follow-up-wrapper::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  background: url("../img/follow-pr.png");
+  background-repeat: no-repeat;
+  width: 119px;
+  height: 432px;
 }/*# sourceMappingURL=style.css.map */

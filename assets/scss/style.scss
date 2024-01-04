@@ -640,6 +640,9 @@ body {
     border-radius: 30px;
     display: inline-block;
     color: var(--white);
+    &:hover {
+        color: var(--white);
+    }
 }
 
 
@@ -2844,7 +2847,7 @@ header {
 
 // Features Page Start
 //Awesome Feature Section
-.awesome-feature-section {
+.awesome-feature {
     position: relative;
     &::before {
         position: absolute;
@@ -2879,11 +2882,76 @@ header {
             display: none;
         }
     }
+}
 
-    .awesome-feature-content {
-       
-        
+// Conversion Section
+.conversion-wrapper {
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 19px;
+        left: 76px;
+        background: url("../img/feature2-l.png");
+        background-repeat: no-repeat;
+        width: 210px;
+        height: 96px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: -136px;
+        right: 0;
+        background: url("../img/conversion-pr.png");
+        background-repeat: no-repeat;
+        width: 238px;
+        height: 555px;
+    }
+}
 
-        
+// Speed Section
+.speed {
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: -235px;
+        left: 0;
+        background: url("../img/speed-l.png");
+        background-repeat: no-repeat;
+        width: 238px;
+        height: 555px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 191px;
+        right: 40px;
+        background: url("../img/speed-r.png");
+        background-repeat: no-repeat;
+        width: 210px;
+        height: 96px;
+    }
+}
+
+// Follow up Section
+.follow-up-wrapper {
+    &::before {
+        position: absolute;
+        content: "";
+        bottom: 151px;
+        left: 76px;
+        background: url("../img/follow-pl.png");
+        background-repeat: no-repeat;
+        width: 210px;
+        height: 96px;
+    }
+    &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        right: 0;
+        background: url("../img/follow-pr.png");
+        background-repeat: no-repeat;
+        width: 119px;
+        height: 432px;
     }
 }
