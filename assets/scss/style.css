@@ -669,7 +669,7 @@ body {
 }
 @media (max-width: 575px) {
   .banner-bg {
-    padding: 215px 0 100px 0;
+    padding: 175px 0 50px 0;
   }
 }
 
@@ -711,6 +711,12 @@ header .dropdown-toggle::before {
   content: "";
   position: absolute;
   padding-right: 45px;
+}
+@media (max-width: 575px) {
+  header .navbar .navbar-brand {
+    max-width: 120px;
+    width: 100%;
+  }
 }
 @media (max-width: 991px) {
   header .navbar {
@@ -1652,13 +1658,13 @@ header .navbar-nav .nav-item-wrap:hover::after {
   height: 35px;
   background-image: url("../img/about-p1.svg");
   background-repeat: no-repeat;
-  z-index: 10;
+  z-index: -10;
 }
-@media (max-width: 575px) {
+@media (max-width: 1700px) {
   .about-banner-wrapper::after {
     width: 60px;
     height: 78px;
-    background-size: contain;
+    display: none;
   }
 }
 .about-banner-wrapper .hero-content {
@@ -1666,6 +1672,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 .about-banner-wrapper .hero-content h2 {
   line-height: 50px !important;
+}
+@media (max-width: 500px) {
+  .about-banner-wrapper .hero-content h2 {
+    line-height: 40px !important;
+  }
 }
 .about-banner-wrapper .hero-content::after {
   position: absolute;
@@ -1675,14 +1686,15 @@ header .navbar-nav .nav-item-wrap:hover::after {
   width: 107px;
   height: 97px;
   background-image: url("../img/about-p2.svg");
+  background-repeat: no-repeat;
 }
 @media (max-width: 575px) {
   .about-banner-wrapper .hero-content::after {
-    width: 58px;
-    height: 58px;
+    width: 82px;
+    height: 86px;
     background-size: contain;
-    top: -23px;
-    left: -9px;
+    top: -25px;
+    left: -20px;
   }
 }
 .about-banner-wrapper .hero-img {
@@ -1725,7 +1737,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   height: 96px;
   background-image: url("../img/benefits-rt.png");
   background-repeat: no-repeat;
-  z-index: 10;
+  z-index: -10;
 }
 .benefit-wrapper::after {
   position: absolute;
@@ -1736,7 +1748,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
   height: 97px;
   background-image: url("../img/benefits-rb.png");
   background-repeat: no-repeat;
-  z-index: 10;
+  z-index: -10;
+}
+@media (max-width: 991px) {
+  .benefit-wrapper::after {
+    display: none;
+  }
 }
 .benefit-wrapper .benefits-card {
   padding: 40px 55px 36px 55px;
@@ -1748,15 +1765,43 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border-radius: 16px;
   box-shadow: 0px 10px 30px 0px rgba(27, 77, 173, 0.08);
 }
+@media (max-width: 1199px) {
+  .benefit-wrapper .benefits-card {
+    padding: 30px;
+  }
+}
+@media (max-width: 575px) {
+  .benefit-wrapper .benefits-card {
+    padding: 22px 30px;
+  }
+}
 .benefit-wrapper .benefit-left-position {
   top: -35px;
   left: -65px;
   z-index: -9;
 }
+@media (max-width: 575px) {
+  .benefit-wrapper .benefit-left-position {
+    width: 63px;
+    height: 444px;
+    background-size: contain;
+    top: 17px;
+    left: 3px;
+  }
+}
 .benefit-wrapper .benefit-right-position {
   right: -30px;
   bottom: -20px;
   z-index: -10;
+}
+@media (max-width: 575px) {
+  .benefit-wrapper .benefit-right-position {
+    width: 92px;
+    height: 258px;
+    background-size: contain;
+    bottom: 39px;
+    left: 5px;
+  }
 }
 
 .contact-wrapper {
@@ -1771,7 +1816,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
   height: 285px;
   background-image: url("../img/oval.png");
   background-repeat: no-repeat;
-  z-index: 10;
+  z-index: -2;
+}
+@media (max-width: 767px) {
+  .contact-wrapper::before {
+    display: none;
+  }
 }
 .contact-wrapper .contact-content .contact-divider {
   margin: 10px 0 60px 0;
@@ -1779,6 +1829,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border-radius: 30px;
   max-width: 50px;
   width: 100%;
+}
+@media (max-width: 575px) {
+  .contact-wrapper .contact-content .contact-divider {
+    margin: 14px 0 40px 0;
+  }
 }
 .contact-wrapper .contact-content .contact-info .name,
 .contact-wrapper .contact-content .contact-info .phone,
@@ -1794,6 +1849,14 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-position: center left 20px;
   background-image: url("../img/profile.svg");
   background-repeat: no-repeat;
+}
+@media (max-width: 575px) {
+  .contact-wrapper .contact-content .contact-info .name,
+  .contact-wrapper .contact-content .contact-info .phone,
+  .contact-wrapper .contact-content .contact-info .email,
+  .contact-wrapper .contact-content .contact-info .address {
+    display: inline-block;
+  }
 }
 .contact-wrapper .contact-content .contact-info .phone {
   background-image: url("../img/phone.svg");
