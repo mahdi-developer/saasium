@@ -510,6 +510,9 @@ body {
 
 .me-65 {
     margin-left: 65px !important;
+    @media (max-width:575px) {
+        margin-left: 0 !important;
+    }
 }
 
 .my-40 {
@@ -2113,6 +2116,12 @@ header {
 .blog-details-wrapper {
     padding: 252px 0 109px 0;
     position: relative;
+    @media (max-width:991px) {
+        padding: 170px 0 140px 0;
+    }
+    @media (max-width:575px) {
+        padding: 122px 0 50px 0;
+    }
     &::before {
         position: absolute;
         content: "";
@@ -2123,11 +2132,8 @@ header {
         background-image: url("../img/about-p1.svg");
         background-repeat: no-repeat;
         z-index: 10;
-
-        @media (max-width:575px) {
-            width: 60px;
-            height: 78px;
-            background-size: contain;
+        @media (max-width:1700px) {
+            display: none;
         }
     }
     &::after {
@@ -2139,12 +2145,23 @@ header {
         background-repeat: no-repeat;
         width: 48px;
         height: 44px;
+        @media (max-width:991px) {
+            display: none;
+        }
     }
     .blog-details-hero {
+        position: relative;
         h2 {
             line-height: 50px !important;
+            @media (max-width:575px) {
+                line-height: 34px !important;
+            }
         }
-        position: relative;
+        h6 {
+            @media (max-width:767px) {
+                color: var(--secondary);
+            }
+        }
         &::after {
             position: absolute;
             content: "";
@@ -2159,10 +2176,14 @@ header {
                 height: 58px;
                 background-size: contain;
                 top: -23px;
-                left: -9px;
+                left: -15px;
             }
         }
         .user-details {
+            @media (max-width:767px) {
+                display: flex;
+                flex-direction: column;
+            }
             .share {
                 .social-icons {
                     .icons {
@@ -2180,11 +2201,17 @@ header {
 .user-details-border {
     border-right: 1px solid var(--dark-4);
     height: 17px;
+    @media (max-width:767px) {
+        display: none;
+    }
 }
 
 //Blog Section
 .blog-wrapper {
     position: relative;
+    @media (max-width:575px) {
+        padding: 50px 0 !important;
+    }
     &::after {
         position: absolute;
         content: "";
@@ -2194,6 +2221,11 @@ header {
         background-repeat: no-repeat;
         width: 109px;
         height: 284px;
+        z-index: -10;
+        @media (max-width:575px) {
+            top: 1985px;
+            left: -50px;
+        }
     }
     .blog-content {
         .quote {
@@ -2213,19 +2245,56 @@ header {
                 height: 39px;
             }
         }
+        .content-img {
+            gap: 20px;
+            @media (max-width:767px) {
+                flex-wrap: wrap;
+                img {
+                    width: 100%;
+                }
+            }
+        }
     }
     .tags {
         padding: 25px 0;
         border-top: 1px solid var(--dark-5);
         border-bottom: 1px solid var(--dark-5);
+        @media (max-width:575px) {
+            flex-direction: column;
+            text-align: center;
+            border: none;
+            padding: 25px 13px;
+            border-radius: 12px;
+            background-color: var(--white);
+            box-shadow: 0px 10px 30px 0px rgba(27, 77, 173, 0.08);
+            
+        }
+        .share {
+            h6 {
+                font-size: 16px !important;
+            }
+        }
     }
     .comments {
         .comments-card {
             .user-img {
                 max-width: 65px;
                 width: 100%;
+                @media (max-width:575px) {
+                    max-width: 48px;
+                    width: 100%;
+                }
             }
             .content {
+                @media (max-width:575px) {
+                    h5 {
+                        font-size: 16px;
+                    }
+                    h6 {
+                        font-size: 14px;
+                        font-weight: 400;
+                    }
+                }
                 .reply {
                     transition: all 0.2s linear;
                     &:hover {
@@ -2243,27 +2312,37 @@ header {
     }
     .comment-post {
         .new-comment {
-            .name {
-                padding: 16px 16px 16px 62px;
-                border: 1px solid var(--dark-5);
-                border-radius: 16px;
-                color: #8C8F9D;
-                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10.1331 9.05841C10.0498 9.05008 9.9498 9.05008 9.85814 9.05841C7.8748 8.99175 6.2998 7.36675 6.2998 5.36675C6.2998 3.32508 7.9498 1.66675 9.9998 1.66675C12.0415 1.66675 13.6998 3.32508 13.6998 5.36675C13.6915 7.36675 12.1165 8.99175 10.1331 9.05841Z" stroke="%236B6974" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.9666 12.1333C3.94993 13.4833 3.94993 15.6833 5.9666 17.0249C8.25827 18.5583 12.0166 18.5583 14.3083 17.0249C16.3249 15.6749 16.3249 13.4749 14.3083 12.1333C12.0249 10.6083 8.2666 10.6083 5.9666 12.1333Z" stroke="%236B6974" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-                background-repeat: no-repeat;
-                background-position: center left 30px;
-                max-width: 346px;
-                width: 100%;
-            }
-            .mail {
-                padding: 16px 16px 16px 62px;
-                border: 1px solid var(--dark-5);
-                border-radius: 16px;
-                color: #8C8F9D;
-                background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M14.1665 17.0834H5.83317C3.33317 17.0834 1.6665 15.8334 1.6665 12.9167V7.08341C1.6665 4.16675 3.33317 2.91675 5.83317 2.91675H14.1665C16.6665 2.91675 18.3332 4.16675 18.3332 7.08341V12.9167C18.3332 15.8334 16.6665 17.0834 14.1665 17.0834Z" stroke="%236B6974" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.1668 7.5L11.5585 9.58333C10.7002 10.2667 9.29183 10.2667 8.43349 9.58333L5.8335 7.5" stroke="%236B6974" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
-                background-repeat: no-repeat;
-                background-position: center left 30px;
-                max-width: 346px;
-                width: 100%;
+            .info {
+                .name {
+                    padding: 16px 16px 16px 62px;
+                    border: 1px solid var(--dark-5);
+                    border-radius: 16px;
+                    color: #8C8F9D;
+                    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10.1331 9.05841C10.0498 9.05008 9.9498 9.05008 9.85814 9.05841C7.8748 8.99175 6.2998 7.36675 6.2998 5.36675C6.2998 3.32508 7.9498 1.66675 9.9998 1.66675C12.0415 1.66675 13.6998 3.32508 13.6998 5.36675C13.6915 7.36675 12.1165 8.99175 10.1331 9.05841Z" stroke="%236B6974" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5.9666 12.1333C3.94993 13.4833 3.94993 15.6833 5.9666 17.0249C8.25827 18.5583 12.0166 18.5583 14.3083 17.0249C16.3249 15.6749 16.3249 13.4749 14.3083 12.1333C12.0249 10.6083 8.2666 10.6083 5.9666 12.1333Z" stroke="%236B6974" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                    background-repeat: no-repeat;
+                    background-position: center left 30px;
+                    max-width: 346px;
+                    width: 100%;
+                    @media (max-width:575px) {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                }
+                .mail {
+                    padding: 16px 16px 16px 62px;
+                    border: 1px solid var(--dark-5);
+                    border-radius: 16px;
+                    color: #8C8F9D;
+                    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M14.1665 17.0834H5.83317C3.33317 17.0834 1.6665 15.8334 1.6665 12.9167V7.08341C1.6665 4.16675 3.33317 2.91675 5.83317 2.91675H14.1665C16.6665 2.91675 18.3332 4.16675 18.3332 7.08341V12.9167C18.3332 15.8334 16.6665 17.0834 14.1665 17.0834Z" stroke="%236B6974" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/><path d="M14.1668 7.5L11.5585 9.58333C10.7002 10.2667 9.29183 10.2667 8.43349 9.58333L5.8335 7.5" stroke="%236B6974" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+                    background-repeat: no-repeat;
+                    background-position: center left 30px;
+                    max-width: 346px;
+                    width: 100%;
+                    @media (max-width:575px) {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+                }
             }
             .content {
                 padding: 15px;
