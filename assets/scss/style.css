@@ -1777,7 +1777,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 @media (max-width: 575px) {
   .benefit-wrapper .benefits-card {
-    padding: 22px 30px;
+    padding: 22px;
   }
 }
 .benefit-wrapper .benefit-left-position {
