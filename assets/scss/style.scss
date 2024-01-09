@@ -514,6 +514,9 @@ body {
 
 .my-40 {
     margin: 40px 0;
+    @media (max-width:575px){
+    margin: 30px 0;
+    }
 }
 
 .mb-60 {
@@ -657,7 +660,7 @@ body {
     z-index: 9;
 
     @media(max-width:991px) {
-        padding: 140px 0 60px 0;
+        padding: 160px 0 60px 0;
     }
 
     @media(max-width:767px) {
@@ -665,7 +668,7 @@ body {
     }
 
     @media(max-width:575px) {
-        padding: 175px 0 50px 0
+        padding: 122px 0 50px 0;
     }
 }
 
@@ -1989,16 +1992,19 @@ header {
         background-repeat: no-repeat;
         z-index: 10;
 
-        @media (max-width:575px) {
+        @media (max-width:1700px) {
             width: 60px;
             height: 78px;
-            background-size: contain;
+            display: none;
         }
     }
 
     .hero-content {
         h2 {
             line-height: 50px !important;
+            @media (max-width:575px) {
+                line-height: 34px !important;
+            }
         }
 
         position: relative;
@@ -2017,7 +2023,7 @@ header {
                 height: 58px;
                 background-size: contain;
                 top: -23px;
-                left: -9px;
+                left: -15px;
             }
         }
     }
@@ -2034,17 +2040,6 @@ header {
         @media (max-width:1199px) {
             left: 30px;
         }
-
-        @media (max-width:991px) {
-            max-width: 80%;
-            width: 100%;
-            left: 0;
-        }
-
-        @media (max-width:767px) {
-            max-width: 100%;
-            width: 100%;
-        }
     }
 }
 
@@ -2060,7 +2055,7 @@ header {
         height: 96px;
         background-image: url("../img/benefits-rt.png");
         background-repeat: no-repeat;
-        z-index: 10;
+        z-index: -10;
     }
 
     &::after {
@@ -2073,6 +2068,9 @@ header {
         background-image: url("../img/round-shape.svg");
         background-repeat: no-repeat;
         z-index: -11;
+        @media (max-width:767px) {
+            display: none;
+        }
     }
 
     .blog-card {

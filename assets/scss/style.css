@@ -509,6 +509,11 @@ body {
 .my-40 {
   margin: 40px 0;
 }
+@media (max-width: 575px) {
+  .my-40 {
+    margin: 30px 0;
+  }
+}
 
 .mb-60 {
   margin-bottom: 60px;
@@ -659,7 +664,7 @@ body {
 }
 @media (max-width: 991px) {
   .banner-bg {
-    padding: 140px 0 60px 0;
+    padding: 160px 0 60px 0;
   }
 }
 @media (max-width: 767px) {
@@ -669,7 +674,7 @@ body {
 }
 @media (max-width: 575px) {
   .banner-bg {
-    padding: 175px 0 50px 0;
+    padding: 122px 0 50px 0;
   }
 }
 
@@ -1895,11 +1900,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   z-index: 10;
 }
-@media (max-width: 575px) {
+@media (max-width: 1700px) {
   .blog-banner-wrapper::after {
     width: 60px;
     height: 78px;
-    background-size: contain;
+    display: none;
   }
 }
 .blog-banner-wrapper .hero-content {
@@ -1907,6 +1912,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 .blog-banner-wrapper .hero-content h2 {
   line-height: 50px !important;
+}
+@media (max-width: 575px) {
+  .blog-banner-wrapper .hero-content h2 {
+    line-height: 34px !important;
+  }
 }
 .blog-banner-wrapper .hero-content::after {
   position: absolute;
@@ -1923,7 +1933,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
     height: 58px;
     background-size: contain;
     top: -23px;
-    left: -9px;
+    left: -15px;
   }
 }
 .blog-banner-wrapper .hero-img {
@@ -1939,19 +1949,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
     left: 30px;
   }
 }
-@media (max-width: 991px) {
-  .blog-banner-wrapper .hero-img {
-    max-width: 80%;
-    width: 100%;
-    left: 0;
-  }
-}
-@media (max-width: 767px) {
-  .blog-banner-wrapper .hero-img {
-    max-width: 100%;
-    width: 100%;
-  }
-}
 
 .blog-card-wrapper {
   position: relative;
@@ -1965,7 +1962,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   height: 96px;
   background-image: url("../img/benefits-rt.png");
   background-repeat: no-repeat;
-  z-index: 10;
+  z-index: -10;
 }
 .blog-card-wrapper::after {
   position: absolute;
@@ -1977,6 +1974,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-image: url("../img/round-shape.svg");
   background-repeat: no-repeat;
   z-index: -11;
+}
+@media (max-width: 767px) {
+  .blog-card-wrapper::after {
+    display: none;
+  }
 }
 .blog-card-wrapper .blog-card {
   border: none;
