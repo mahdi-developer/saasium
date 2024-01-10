@@ -2311,6 +2311,11 @@ header {
         }
     }
     .comment-post {
+        h4 {
+            font-size: 24px !important;
+            font-weight: 700 !important;
+            line-height: 34px !important;
+        }
         .new-comment {
             .info {
                 .name {
@@ -2375,8 +2380,33 @@ header {
             }
         }
     }
+    .trend {
+        padding: 50px 0;
+        @media(max-width:575px) {
+            padding: 40px 0;
+        }
+        h4 {
+            font-size: 24px !important;
+        }
+        .trend-content {
+            h6 {
+                font-size: 16px !important;
+                line-height: 26px !important;
+            }
+        }
+    }
     .blog-widget {
+        h4 {
+            font-size: 24px !important;
+            font-weight: 700 !important;
+            line-height: 34px !important;
+        }
         .category-title {
+            h5 {
+                font-size: 20px !important;
+                font-weight: 700 !important;
+                line-height: 30px !important;
+            }
             a {
                 &:hover {
                     color: var(--primary);
@@ -2385,6 +2415,17 @@ header {
                     }
                 }
             }
+        }
+    }
+    .gallery {
+        padding-top: 50px;
+        @media (max-width:575px) {
+            padding-top: 40px;
+        }
+        h4 {
+            font-size: 24px !important;
+            font-weight: 700 !important;
+            line-height: 34px !important;
         }
     }
 }

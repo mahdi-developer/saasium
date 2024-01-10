@@ -2218,6 +2218,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .blog-wrapper .comments .border-bottom {
   border-bottom: 1px solid var(--dark-5);
 }
+.blog-wrapper .comment-post h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 34px !important;
+}
 .blog-wrapper .comment-post .new-comment .info .name {
   padding: 16px 16px 16px 62px;
   border: 1px solid var(--dark-5);
@@ -2278,11 +2283,49 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .blog-wrapper .search-console .search:focus-visible {
   outline: none !important;
 }
+.blog-wrapper .trend {
+  padding: 50px 0;
+}
+@media (max-width: 575px) {
+  .blog-wrapper .trend {
+    padding: 40px 0;
+  }
+}
+.blog-wrapper .trend h4 {
+  font-size: 24px !important;
+}
+.blog-wrapper .trend .trend-content h6 {
+  font-size: 16px !important;
+  line-height: 26px !important;
+}
+.blog-wrapper .blog-widget h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 34px !important;
+}
+.blog-wrapper .blog-widget .category-title h5 {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 30px !important;
+}
 .blog-wrapper .blog-widget .category-title a:hover {
   color: var(--primary);
 }
 .blog-wrapper .blog-widget .category-title a:hover svg * {
   fill: var(--primary);
+}
+.blog-wrapper .gallery {
+  padding-top: 50px;
+}
+@media (max-width: 575px) {
+  .blog-wrapper .gallery {
+    padding-top: 40px;
+  }
+}
+.blog-wrapper .gallery h4 {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 34px !important;
 }
 
 .blog-slide-wrapper {
