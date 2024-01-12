@@ -38,7 +38,10 @@
         slidesPerView: 3,
         spaceBetween: 12,
       },
-      
+      300: {
+        slidesPerView: 2,
+        spaceBetween: 7,
+      },
     }
   });
 

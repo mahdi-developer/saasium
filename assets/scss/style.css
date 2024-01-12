@@ -399,6 +399,10 @@ body {
   font-weight: 700;
 }
 
+.text-balance {
+  text-wrap: balance;
+}
+
 .ls-1 {
   letter-spacing: 1.26px;
 }
@@ -618,7 +622,22 @@ body {
 }
 
 .focus-none:focus-visible {
-  outline: none;
+  outline: 1px solid var(--primary);
+}
+
+.h-primary {
+  transition: 0.2s linear;
+}
+.h-primary:hover {
+  color: var(--primary);
+}
+
+.h-white {
+  transition: 0.2s linear;
+}
+.h-white:hover {
+  color: var(--white);
+  font-weight: 600;
 }
 
 .hero-btn {
@@ -632,6 +651,10 @@ body {
   border-radius: 30px;
   display: flex;
   gap: 6px;
+  transition: 0.3s linear;
+}
+.hero-btn:hover {
+  background-color: var(--secondary);
 }
 @media (max-width: 991px) {
   .hero-btn {
@@ -664,10 +687,11 @@ body {
   background-color: var(--primary);
   border-radius: 30px;
   display: inline-block;
-  color: var(--white);
+  transition: 0.3s linear;
 }
 .features-btn:hover {
   color: var(--white);
+  background-color: var(--secondary);
 }
 
 .banner-bg {
@@ -719,6 +743,10 @@ header .header-btn {
   background-color: var(--secondary);
   display: flex;
   gap: 6px;
+  transition: 0.3s linear;
+}
+header .header-btn:hover {
+  background-color: var(--primary);
 }
 header .dropdown-toggle::after {
   display: none;
@@ -1388,6 +1416,14 @@ header .navbar-nav .nav-item-wrap:hover::after {
   color: var(--secondary);
   font-size: 16px;
   font-weight: 500;
+  transition: 0.3s linear;
+}
+.work-process-wrapper .work-process-btn:hover {
+  background-color: var(--secondary);
+  color: var(--white);
+}
+.work-process-wrapper .work-process-btn:hover svg * {
+  stroke: var(--white);
 }
 @media (max-width: 575px) {
   .work-process-wrapper .work-process-btn {
@@ -1548,7 +1584,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .app {
   background: linear-gradient(180deg, #ffffff, #f8f6ff);
   position: relative;
-  z-index: -9;
 }
 .app::after {
   position: absolute;
@@ -1558,7 +1593,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   width: 164px;
   height: 383px;
   background-image: url("../img/app-right.png");
-  z-index: -8;
+  z-index: 8;
 }
 @media (max-width: 575px) {
   .app::after {
@@ -1622,6 +1657,10 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 .footer-wrapper .footer-wrap .form-control-btn {
   padding: 13px 30px;
+  transition: 0.2s linear;
+}
+.footer-wrapper .footer-wrap .form-control-btn:hover {
+  background-color: var(--secondary);
 }
 @media (max-width: 575px) {
   .footer-wrapper .footer-wrap .form-control-btn {
@@ -1669,6 +1708,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border-radius: 50%;
   background-color: var(--primary);
   display: none;
+  cursor: pointer;
 }
 
 .about-banner-wrapper::after {
@@ -2018,6 +2058,9 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   background-position: top 50% right 5px;
 }
+.blog-card-wrapper .blog-card:hover .card-content h4 {
+  color: var(--primary);
+}
 .blog-card-wrapper .blog-btn {
   padding: 17px 36px;
   display: flex;
@@ -2026,6 +2069,10 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border: none;
   border-radius: 30px;
   background-color: var(--primary);
+  transition: 0.3s linear;
+}
+.blog-card-wrapper .blog-btn:hover {
+  background-color: var(--secondary);
 }
 
 .blog-details-wrapper {
@@ -2283,6 +2330,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .blog-wrapper .comment-post .new-comment .comment-submit-btn {
   padding: 17px 36px;
   display: inline-block;
+  transition: 0.3s linear;
+}
+.blog-wrapper .comment-post .new-comment .comment-submit-btn:hover {
+  color: var(--white);
+  background-color: var(--secondary);
 }
 .blog-wrapper .search-console .search {
   padding: 16px 30px;
@@ -2307,9 +2359,15 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .blog-wrapper .trend h4 {
   font-size: 24px !important;
 }
+.blog-wrapper .trend .trend-content {
+  transition: 0.2s linear;
+}
 .blog-wrapper .trend .trend-content h6 {
   font-size: 16px !important;
   line-height: 26px !important;
+}
+.blog-wrapper .trend .trend-content:hover {
+  color: var(--primary);
 }
 .blog-wrapper .blog-widget h4 {
   font-size: 24px !important;
@@ -2320,6 +2378,9 @@ header .navbar-nav .nav-item-wrap:hover::after {
   font-size: 20px !important;
   font-weight: 700 !important;
   line-height: 30px !important;
+}
+.blog-wrapper .blog-widget .category-title a {
+  transition: all 0.2s linear;
 }
 .blog-wrapper .blog-widget .category-title a:hover {
   color: var(--primary);
@@ -2345,7 +2406,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background: linear-gradient(180deg, #ece8ff 0%, #f2fbff 100%);
 }
 .blog-slide-wrapper .blog-slide {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 @media (max-width: 575px) {
   .blog-slide-wrapper .blog-slide {
@@ -2441,7 +2502,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
   }
 }
 .blog-slide-wrapper .blog-slide .splide .splide__track .splide__list .splide__slide .blog-card {
-  background-color: var(--white);
   border: none;
   border-radius: 16px;
   box-shadow: 0px 10px 30px 0px rgba(27, 77, 173, 0.08);
@@ -2461,6 +2521,9 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background: url('data:image/svg+xml,<svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.217443 6.25H18.4827C18.6276 6.25 18.7001 6.30263 18.7001 6.40789V7.59211C18.7001 7.69737 18.6276 7.75 18.4827 7.75H0.217443C0.0724811 7.75 0 7.69737 0 7.59211V6.40789C0 6.30263 0.0724811 6.25 0.217443 6.25Z" fill="%23603EFF"/><path d="M20.7002 12.28L25.0469 7.9333C25.5602 7.41997 25.5602 6.57997 25.0469 6.06664L20.7002 1.71997" stroke="%23603EFF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   background-repeat: no-repeat;
   background-position: top 50% right 5px;
+}
+.blog-slide-wrapper .blog-slide .splide .splide__track .splide__list .splide__slide .blog-card:hover .card-content h4 {
+  color: var(--primary);
 }
 
 .contact-hero-wrapper::after {
@@ -2719,6 +2782,10 @@ header .navbar-nav .nav-item-wrap:hover::after {
   padding: 13px 30px;
   transition: 0.3s;
   display: inline-block;
+  transition: 0.3s linear;
+}
+.support-wrapper .get-contact .contact-submit-btn:hover {
+  background-color: var(--secondary);
 }
 .support-wrapper .get-contact .contact-submit-btn:hover {
   color: var(--white);
