@@ -2802,11 +2802,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   z-index: 10;
 }
-@media (max-width: 575px) {
+@media (max-width: 1700px) {
   .pricing-hero-wrapper::after {
     width: 60px;
     height: 78px;
-    background-size: contain;
+    display: none;
   }
 }
 .pricing-hero-wrapper .hero-content {
@@ -2814,6 +2814,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 .pricing-hero-wrapper .hero-content h2 {
   line-height: 50px !important;
+}
+@media (max-width: 575px) {
+  .pricing-hero-wrapper .hero-content h2 {
+    line-height: 34px !important;
+  }
 }
 .pricing-hero-wrapper .hero-content::after {
   position: absolute;
@@ -2849,6 +2854,37 @@ header .navbar-nav .nav-item-wrap:hover::after {
   width: 193px;
   height: 98px;
 }
+@media (max-width: 1199px) {
+  .pricing-hero-wrapper .hero-img::after {
+    right: -60px;
+  }
+}
+@media (max-width: 991px) {
+  .pricing-hero-wrapper .hero-img::after {
+    right: 12px;
+  }
+}
+@media (max-width: 550px) {
+  .pricing-hero-wrapper .hero-img::after {
+    right: 0;
+  }
+}
+@media (max-width: 450px) {
+  .pricing-hero-wrapper .hero-img::after {
+    right: -12px;
+    max-width: 150px;
+    width: 100%;
+    background-size: contain;
+  }
+}
+@media (max-width: 375px) {
+  .pricing-hero-wrapper .hero-img::after {
+    right: -35px;
+    max-width: 150px;
+    width: 100%;
+    background-size: contain;
+  }
+}
 .pricing-hero-wrapper .hero-img:hover {
   transform: scale(1.1);
 }
@@ -2862,6 +2898,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
     max-width: 80%;
     width: 100%;
     left: 0;
+    text-align: center;
   }
 }
 @media (max-width: 767px) {
@@ -2966,11 +3003,21 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border-radius: 30px;
   margin-bottom: 35px;
 }
+@media (max-width: 991px) {
+  .subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial {
+    font-size: 11px;
+  }
+}
 .subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial-bw {
   padding: 9px 22px;
   background-color: var(--white);
   border-radius: 30px;
   margin-bottom: 35px;
+}
+@media (max-width: 991px) {
+  .subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial-bw {
+    font-size: 11px;
+  }
 }
 .subscription-wrapper .pricing-table .active {
   border-inline: 3px solid var(--primary-shad);
@@ -3030,6 +3077,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   width: 210px;
   height: 96px;
+  z-index: -2;
+}
+@media (max-width: 991px) {
+  .conversion-wrapper::before {
+    display: none;
+  }
 }
 .conversion-wrapper::after {
   position: absolute;
@@ -3040,6 +3093,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   width: 238px;
   height: 555px;
+  z-index: -2;
+}
+@media (max-width: 991px) {
+  .conversion-wrapper::after {
+    display: none;
+  }
 }
 
 .speed::before {
@@ -3051,6 +3110,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   width: 238px;
   height: 555px;
+  z-index: -2;
+}
+@media (max-width: 991px) {
+  .speed::before {
+    display: none;
+  }
 }
 .speed::after {
   position: absolute;
@@ -3061,6 +3126,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   width: 210px;
   height: 96px;
+  z-index: -2;
+}
+@media (max-width: 991px) {
+  .speed::after {
+    display: none;
+  }
 }
 
 .follow-up-wrapper::before {
@@ -3072,6 +3143,12 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   width: 210px;
   height: 96px;
+  z-index: -2;
+}
+@media (max-width: 991px) {
+  .follow-up-wrapper::before {
+    display: none;
+  }
 }
 .follow-up-wrapper::after {
   position: absolute;
@@ -3082,4 +3159,10 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-repeat: no-repeat;
   width: 119px;
   height: 432px;
+  z-index: -2;
+}
+@media (max-width: 991px) {
+  .follow-up-wrapper::after {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
