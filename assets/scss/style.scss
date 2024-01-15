@@ -3112,6 +3112,9 @@ header {
         }
         .active {
             border-inline: 3px solid var(--primary-shad);
+            @media (max-width:767px) {
+                border: 3px solid var(--primary-shad);
+            }
             
         }
         .service-mark {

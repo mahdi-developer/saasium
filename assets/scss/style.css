@@ -3022,6 +3022,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
 .subscription-wrapper .pricing-table .active {
   border-inline: 3px solid var(--primary-shad);
 }
+@media (max-width: 767px) {
+  .subscription-wrapper .pricing-table .active {
+    border: 3px solid var(--primary-shad);
+  }
+}
 .subscription-wrapper .pricing-table .service-mark {
   min-height: 64px;
   height: 100%;
