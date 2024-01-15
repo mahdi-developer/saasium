@@ -489,7 +489,7 @@ body {
 }
 @media (max-width: 575px) {
   .pb-40 {
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
 }
 
@@ -862,7 +862,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 @media (max-width: 575px) {
   .hero-wrapper {
-    padding: 215px 0 100px 0;
+    padding: 160px 0 100px 0;
   }
 }
 .hero-wrapper::after {
@@ -1619,16 +1619,17 @@ header .navbar-nav .nav-item-wrap:hover::after {
   }
 }
 .footer-wrapper .footer-wrap h5 {
-  font-size: 20px !important;
-  line-height: 30px !important;
+  font-size: 17px !important;
+  line-height: 27px !important;
 }
 .footer-wrapper .footer-wrap h6 {
-  font-size: 16px !important;
-  line-height: 26px !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
 }
 .footer-wrapper .footer-wrap p {
-  font-size: 18px !important;
-  line-height: 28px !important;
+  font-size: 14px !important;
+  line-height: 24px !important;
+  margin-bottom: 5px !important;
 }
 .footer-wrapper .footer-wrap .form-control {
   padding: 14px 20px 13px 47px;
@@ -1835,6 +1836,8 @@ header .navbar-nav .nav-item-wrap:hover::after {
 @media (max-width: 575px) {
   .benefit-wrapper .benefits-card {
     padding: 22px;
+    max-width: 166px;
+    width: 100%;
   }
 }
 .benefit-wrapper .benefit-left-position {
