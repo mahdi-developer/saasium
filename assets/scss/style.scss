@@ -684,6 +684,10 @@ body {
         color: var(--white);
         background-color: var(--secondary);
     }
+    @media (max-width:575px) {
+        padding: 12px 25px;
+        font-size: 14px !important;
+    }
 }
 
 

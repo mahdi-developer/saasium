@@ -693,6 +693,12 @@ body {
   color: var(--white);
   background-color: var(--secondary);
 }
+@media (max-width: 575px) {
+  .features-btn {
+    padding: 12px 25px;
+    font-size: 14px !important;
+  }
+}
 
 .banner-bg {
   background: url("../img/banner-bg.png");
