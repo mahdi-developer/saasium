@@ -1692,19 +1692,31 @@ header {
         }
 
         h5 {
-            font-size: 17px !important;
-            line-height: 27px !important;
+            font-size: 20px !important;
+            line-height: 30px !important;
+            @media (max-width:575px) {
+                font-size: 17px !important;
+                line-height: 27px !important;
+            }
         }
 
         h6 {
-            font-size: 14px !important;
-            line-height: 20px !important;
+            font-size: 16px !important;
+            line-height: 26px !important;
+            @media (max-width:575px) {
+                font-size: 14px !important;
+                line-height: 20px !important;
+            }
         }
 
         p {
-            font-size: 14px !important;
-            line-height: 24px !important;
-            margin-bottom: 5px !important;
+            font-size: 18px !important;
+            line-height: 28px !important;
+            @media (max-width:575px) {
+                font-size: 14px !important;
+                line-height: 24px !important;
+                margin-bottom: 5px !important;
+            }
         }
 
         .form-control {
@@ -1791,6 +1803,7 @@ header {
     background-color: var(--primary);
     display: none;
     cursor: pointer;
+    z-index: 12;
 }
 
 //About Page Start
@@ -1904,7 +1917,7 @@ header {
     }
 
     .benefits-card {
-        padding: 40px 55px 36px 55px;
+        padding: 40px 45px 36px 45px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1912,11 +1925,13 @@ header {
         background-color: var(--white);
         border-radius: 16px;
         box-shadow: 0px 10px 30px 0px rgba(27, 77, 173, 0.08);
+        max-width: 235px;
+        width: 100%;
         @media (max-width:1199px) {
             padding: 30px;
         }
         @media (max-width:575px) {
-            padding: 22px;
+            padding: 22px 27px;
             max-width: 166px;
             width: 100%;
         }
@@ -2014,7 +2029,6 @@ header {
             }
 
             .massages {
-                // vertical-align: top;
                 padding: 12px 20px;
                 border: 1px solid var(--dark-5);
                 border-radius: 10px;
@@ -2023,10 +2037,6 @@ header {
                 height: 150px !important;
                 resize: none;
                 text-transform: capitalize;
-
-                &:focus-visible {
-                    outline: none;
-                }
             }
 
             .hero-btn {
@@ -2150,13 +2160,6 @@ header {
                     background-position: top 50% right 5px;
                 }
             }
-        }
-        &:hover {
-            .card-content {
-            h4 {
-                color: var(--primary);
-            }
-            } 
         }
     }
 
@@ -3100,6 +3103,11 @@ header {
                         border: 1px solid var(--primary);
                         border-radius: 30px;
                         margin-bottom: 35px;
+                        transition: 0.2s linear;
+                        &:hover {
+                            color: var(--secondary);
+                            border: 1px solid var(--secondary);
+                        }
                         @media (max-width:991px) {
                             font-size: 11px;
                         }
@@ -3109,6 +3117,10 @@ header {
                         background-color: var(--white);
                         border-radius: 30px;
                         margin-bottom: 35px;
+                        transition: 0.2s linear;
+                        &:hover {
+                            color: var(--secondary);
+                        }
                         @media (max-width:991px) {
                             font-size: 11px;
                         }  

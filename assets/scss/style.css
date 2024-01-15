@@ -1625,17 +1625,35 @@ header .navbar-nav .nav-item-wrap:hover::after {
   }
 }
 .footer-wrapper .footer-wrap h5 {
-  font-size: 17px !important;
-  line-height: 27px !important;
+  font-size: 20px !important;
+  line-height: 30px !important;
+}
+@media (max-width: 575px) {
+  .footer-wrapper .footer-wrap h5 {
+    font-size: 17px !important;
+    line-height: 27px !important;
+  }
 }
 .footer-wrapper .footer-wrap h6 {
-  font-size: 14px !important;
-  line-height: 20px !important;
+  font-size: 16px !important;
+  line-height: 26px !important;
+}
+@media (max-width: 575px) {
+  .footer-wrapper .footer-wrap h6 {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
 }
 .footer-wrapper .footer-wrap p {
-  font-size: 14px !important;
-  line-height: 24px !important;
-  margin-bottom: 5px !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+}
+@media (max-width: 575px) {
+  .footer-wrapper .footer-wrap p {
+    font-size: 14px !important;
+    line-height: 24px !important;
+    margin-bottom: 5px !important;
+  }
 }
 .footer-wrapper .footer-wrap .form-control {
   padding: 14px 20px 13px 47px;
@@ -1716,6 +1734,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-color: var(--primary);
   display: none;
   cursor: pointer;
+  z-index: 12;
 }
 
 .about-banner-wrapper::after {
@@ -1825,7 +1844,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
   }
 }
 .benefit-wrapper .benefits-card {
-  padding: 40px 55px 36px 55px;
+  padding: 40px 45px 36px 45px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1833,6 +1852,8 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-color: var(--white);
   border-radius: 16px;
   box-shadow: 0px 10px 30px 0px rgba(27, 77, 173, 0.08);
+  max-width: 235px;
+  width: 100%;
 }
 @media (max-width: 1199px) {
   .benefit-wrapper .benefits-card {
@@ -1841,7 +1862,7 @@ header .navbar-nav .nav-item-wrap:hover::after {
 }
 @media (max-width: 575px) {
   .benefit-wrapper .benefits-card {
-    padding: 22px;
+    padding: 22px 27px;
     max-width: 166px;
     width: 100%;
   }
@@ -1947,9 +1968,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
   height: 150px !important;
   resize: none;
   text-transform: capitalize;
-}
-.contact-wrapper .contact-content .contact-info .massages:focus-visible {
-  outline: none;
 }
 .contact-wrapper .contact-content .contact-info .hero-btn {
   transform: none;
@@ -2066,9 +2084,6 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background: url('data:image/svg+xml,<svg width="27" height="14" viewBox="0 0 27 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.217443 6.25H18.4827C18.6276 6.25 18.7001 6.30263 18.7001 6.40789V7.59211C18.7001 7.69737 18.6276 7.75 18.4827 7.75H0.217443C0.0724811 7.75 0 7.69737 0 7.59211V6.40789C0 6.30263 0.0724811 6.25 0.217443 6.25Z" fill="%23603EFF"/><path d="M20.7002 12.28L25.0469 7.9333C25.5602 7.41997 25.5602 6.57997 25.0469 6.06664L20.7002 1.71997" stroke="%23603EFF" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/></svg>');
   background-repeat: no-repeat;
   background-position: top 50% right 5px;
-}
-.blog-card-wrapper .blog-card:hover .card-content h4 {
-  color: var(--primary);
 }
 .blog-card-wrapper .blog-btn {
   padding: 17px 36px;
@@ -3011,6 +3026,11 @@ header .navbar-nav .nav-item-wrap:hover::after {
   border: 1px solid var(--primary);
   border-radius: 30px;
   margin-bottom: 35px;
+  transition: 0.2s linear;
+}
+.subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial:hover {
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
 }
 @media (max-width: 991px) {
   .subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial {
@@ -3022,6 +3042,10 @@ header .navbar-nav .nav-item-wrap:hover::after {
   background-color: var(--white);
   border-radius: 30px;
   margin-bottom: 35px;
+  transition: 0.2s linear;
+}
+.subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial-bw:hover {
+  color: var(--secondary);
 }
 @media (max-width: 991px) {
   .subscription-wrapper .pricing-table .pricing-wrapper .price-header .price .free-trial-bw {
